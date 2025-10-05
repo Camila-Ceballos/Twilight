@@ -1,0 +1,72 @@
+body{
+    font-family: "Poppins";
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.nav-left{
+    display: flex;
+    gap: 50px;
+}
+
+.item{
+
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 5px 20px;
+
+}
+
+.item-active{
+     
+    background-color: #6294C3;
+    color: aliceblue;
+    border: none;
+
+}
+
+.item-libro{
+    color: #A7ADEB;
+    border-color: #6294C3;
+}
+
+.titulo{
+    font-family: "Jaldi";
+    color: #A7ADEB;
+    font-weight: 100;
+    font-size: 384px;
+    line-height: 384px;
+    margin: 0px;
+    padding: 0px;
+    grid-column: 1 / 4;
+
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    justify-content:center;
+    justify-items: center;
+}
+
+.subtitulo{
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+.vampiro{
+    color: red;
+    font-weight: bold;
+}
