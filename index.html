@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- import bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- fuentes de google y datfont que importe -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+    .table-custom-header thead {
+        background-color: #A7ADEB;
+        color: white; 
+    }
+    </style>
+
     <title>Twilight</title>
 </head>
 <body>
-    <header>
-         <nav class="nav-container">
+    <!-- header de html5 semantico -->
+    <header> 
+
+        <!-- nav de navigator especial para menus -->
+         <nav class="nav-container">        
 
                 <div class="nav-left">
-
+            
                     <a class="item item-active" href="#home">Twilight</a>
-                    <a class="item item-libro" href="#about">Libros</a>
+                    <a class="item item-libro" href="#libros">Libros</a>
                     
                 </div>
 
@@ -43,17 +61,161 @@
         </p>
     </main>
 
-    <picture>
+    <!-- <picture>
         <source media="(min-width: 650px)" srcset="./image/hero.png">
         <source media="(min-width: 465px)" srcset="./image/hero.png">
-        <img src="./image/hero.png" alt="Flowers" style="width:100%;">
-    </picture>
+        <img src="./image/hero.png" alt="Bella y Edward" style="width:100%;">
+    </picture> -->
+    <div class="video" id="home">
+        <video width="100%" autoplay loop>
+            <source src="./image/video.mp4" type="video/mp4">
+            <source src="./image/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+   <div class="d-flex justify-content-end mx-5"> 
+    <p class="subtitulo anchosub"> "Y tercera, estaba incondicional e irrevocablemente enamorada de él"</p>
+   </div> 
+
+    <div class="container mt-5" id="">
+        <h1 class="mb-4">Personajes de la Saga Crepúsculo</h1>
+        
+        <div class="table-responsive">
+            <table class="table table-striped table-hover caption-top rounded-3 overflow-hidden table-custom-header">
+                <caption>Los miembros principales de los clanes Cullen y Black, y la protagonista Bella Swan.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Especie</th>
+                        <th scope="col">Origen (Saga)</th>
+                        <th scope="col">Dato Curioso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Bella Swan (Cullen)</th>
+                        <td>Humana, luego **Vampira**</td>
+                        <td>Crepúsculo</td>
+                        <td>La autora describió a Bella como "propensa a los accidentes" antes de su transformación.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Edward Cullen</th>
+                        <td>**Vampiro**</td>
+                        <td>Crepúsculo</td>
+                        <td>Tiene el don de la **telepatía**, pero la mente de Bella era la única que no podía leer al comienzo de la saga.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jacob Black</th>
+                        <td>**Metamorfo** (Hombre Lobo)</td>
+                        <td>Crepúsculo</td>
+                        <td>El actor **Taylor Lautner** casi es reemplazado antes de *Luna Nueva* por el requisito de la transformación física de su personaje.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Alice Cullen</th>
+                        <td>Vampira</td>
+                        <td>Crepúsculo</td>
+                        <td>Su don es la **precognición** (ver el futuro), pero sus visiones son ciegas para los metamorfos.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Carlisle Cullen</th>
+                        <td>Vampiro</td>
+                        <td>Crepúsculo</td>
+                        <td>Es el fundador del clan Cullen y trabaja como **médico** gracias a su extraordinario autocontrol sobre la sed de sangre.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="container" id="libros">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-xs-12 mb-5 position-relative relative libro1" >
+                <img src="./image/libro1.png" alt="" width="100%">
+                <div class="parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa quae quo nisi exercitationem odio unde suscipit ducimus modi. At sapiente quisquam fugiat possimus autem enim modi natus? Perferendis, consectetur!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mb-5 position-relative libro2">
+                <img src="./image/libro2.png" alt="" width="100%">
+                <div class="parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa quae quo nisi exercitationem odio unde suscipit ducimus modi. At sapiente quisquam fugiat possimus autem enim modi natus? Perferendis, consectetur!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mb-5 position-relative libro3">
+                <img src="./image/libro3.png" alt="" width="100%">
+                <div class="parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa quae quo nisi exercitationem odio unde suscipit ducimus modi. At sapiente quisquam fugiat possimus autem enim modi natus? Perferendis, consectetur!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12 mb-5 position-relative libro4">
+                <img src="./image/libro4.png" alt="" width="100%">
+                <div class="parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa quae quo nisi exercitationem odio unde suscipit ducimus modi. At sapiente quisquam fugiat possimus autem enim modi natus? Perferendis, consectetur!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mb-5 position-relative libro5">
+                <img src="./image/libro5.png" alt="" width="100%">
+                <div class="parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa quae quo nisi exercitationem odio unde suscipit ducimus modi. At sapiente quisquam fugiat possimus autem enim modi natus? Perferendis, consectetur!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mb-5 position-relative libro6">
+                <img src="./image/libro6.png" alt="" width="100%">
+                <div class="parrafo">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa quae quo nisi exercitationem odio unde suscipit ducimus modi. At sapiente quisquam fugiat possimus autem enim modi natus? Perferendis, consectetur!
+                    </p>   
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+    
+
+    <section class="login-container" id="contact">
+      
+        <div class="registro">
+                        
+            <h2 class="mb-4 text-center inter-uniquifier">Conviertete en un vampiro</h2>
+            <p class="inter-uniquifier"> Registrate y pronto recibiras en tu ventana la visita de nuestro vampiro</p>
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <input type="text" class="fill" id="name" name="name" required  required placeholder="Tipo de sangre">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="fill" id="email" name="email" required placeholder="Correo Electronico">
+                </div>
+            
+                <button type="submit" class="boton mt-5">Enviar</button>
+            </form>
+        </div>
+
+    </section>
 
     <footer>
-        la pata
-        <button class="btn btn-primary">soy un boton</button>
+        
     </footer>
     
+
+
+    
+
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

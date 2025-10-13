@@ -45,12 +45,12 @@ body{
     font-family: "Jaldi";
     color: #A7ADEB;
     font-weight: 100;
-    font-size: 384px;
+    font-size: 25vw;   
     line-height: 384px;
     margin: 0px;
     padding: 0px;
     grid-column: 1 / 4;
-
+    z-index: -1;
 }
 
 .main-container{
@@ -69,4 +69,126 @@ body{
 .vampiro{
     color: red;
     font-weight: bold;
+}
+
+.anchosub{
+    width: 300px;
+    
+}
+
+
+.parrafo{
+    transition: all .3s;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.61);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    top: 0;
+
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 20px;
+}
+
+
+.libro1:hover>.parrafo{
+    opacity: 1;
+
+}
+
+.libro2:hover>.parrafo{
+    opacity: 1;
+}
+
+.libro3:hover>.parrafo{
+    opacity: 1;
+}
+.libro4:hover>.parrafo{
+    opacity: 1;
+}
+.libro5:hover>.parrafo{
+    opacity: 1;
+}
+.libro6:hover>.parrafo{
+    opacity: 1;
+}
+
+
+@keyframes ejemplo {
+    0%{
+        top: 300px;
+    }
+    100%{
+        top: 0;
+
+    }
+}
+
+.login-container{
+    font-family: "Inter";
+    background-image: url(./image/fondologin.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro{
+    background-color: rgb(246, 246, 246);
+    padding: 20px 40px;
+    border-radius: 76px;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.inter-uniquifier{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.boton{
+    background-color: #C8B29B;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 20px;
+    width: 100%;
+    
+}
+
+.fill{
+    border-radius: 27px;
+    padding: 5px 20px;
+    border: 1px solid #6294C3;
+    width: 100%;
+}
+.video{
+    position: relative;
+}
+.video::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0.123),transparent 50%), 
+                      linear-gradient(to bottom, white, rgba(255, 255, 255, 0.123),transparent 50% );
 }
